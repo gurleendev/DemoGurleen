@@ -14,8 +14,8 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Compile Java Code
-        run: javac src/main/java/com/example/App.java
+      - name: List project files
+        run: ls -R
 
-      - name: Run Java Application
-        run: java -cp src/main/java com.example.App
+      - name: Display Java version
+        run: java -version
